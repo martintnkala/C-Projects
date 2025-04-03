@@ -1,14 +1,21 @@
-//
-//  main.cpp
-//  university
-//
-//  Created by Martin Nkala on 4/1/25.
-//
-
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-   // insert code here...
-   std::cout << "Hello, World!\n";
+void func(int num){
+   
+   if (num > 0){
+      
+      printf("%d ", num);
+      
+      func(num -1);
+   }
+}
+
+int main() {
+   
+   int num = 6;
+   
+   func(num);
+   
    return 0;
 }
